@@ -4,8 +4,8 @@
   "description": "API para clone do twitter",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index",
-    "start": "node index"
+    "dev": "nodemon src/index",
+    "start": "node src/index"
   },
   "repository": {
     "type": "git",

@@ -1,10 +1,12 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
+const connectDatabase = require("./dataBase/dataBase");
 
 const port = process.nextTick.PORT || 3001;
 const app = express();
 
+connectDatabase();
 app.use(cors());
 
 app.get("/", (req, res) => {
