@@ -1,0 +1,28 @@
+{
+  "name": "api-twitterclone",
+  "version": "1.0.0",
+  "description": "API para clone do twitter",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusFUU/api-twitterclone.git"
+  },
+  "keywords": [],
+  "author": "Vinícius Monteiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniciusFUU/api-twitterclone/issues"
+  },
+  "homepage": "https://github.com/viniciusFUU/api-twitterclone#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2",
+    "nodemon": "^2.0.19"
+  }
+}
