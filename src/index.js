@@ -3,6 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const connectDatabase = require("./dataBase/dataBase");
 const userRoute = require("./users/users.route");
+const authRoute = require("./auth/auth.route");
 
 const port = process.nextTick.PORT || 3001;
 const app = express();
@@ -12,6 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/users", userRoute);
+app.use("/auth", authRoute);
 
 app.get("/", (req, res) => {
   res.send({ message: "hello word!" });
