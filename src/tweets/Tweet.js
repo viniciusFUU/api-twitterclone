@@ -14,11 +14,11 @@ const TweetSchema = new mongoose.Schema({
     type: Array,
     required: true,
   },
-  comment: {
+  comments: {
     type: Array,
     required: true,
   },
-  retweet: {
+  retweets: {
     type: Array,
     required: true,
   },
