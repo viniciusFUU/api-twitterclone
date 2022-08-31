@@ -1,5 +1,5 @@
 require("dotenv").config();
-const jwt = require("jsonbtoken");
+const jwt = require("jsonwebtoken");
 const { findByIdUserService } = require("../users/users.service");
 
 module.exports = (req, res, next) => {
@@ -17,7 +17,7 @@ module.exports = (req, res, next) => {
 
   const [scheme, token] = parts;
 
-  if (!/^Bearer^/i.test(scheme)) {
+  if (!/^Bearer$/i.test(scheme)) {
     return res.status(401).send({ message: "Token mal formatado!" });
   }
 
